@@ -12,6 +12,7 @@
 }
 
 .userMenu {
+  position: relative;
   width: 70px;
   height: 70px;
 }
@@ -26,9 +27,23 @@
 }
 
 .userMenu ul {
+  position: absolute;
+  right: 10px;
   display: none;
+  width: 220px;
+  padding: 10px 0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
 }
 
 .userMenu:hover ul {
   display: block;
+}
+
+.userMenu li {
+  padding: 0 10px;
+  line-height: 50px;
+}
+
+.userMenu li:hover {
+  background: lightgrey;
 }

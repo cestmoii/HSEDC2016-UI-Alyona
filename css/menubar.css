@@ -1,0 +1,23 @@
+.menubar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 300px);
+  height: 70px;
+  margin-left: 300px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.userMenu {
+  width: 70px;
+  height: 70px;
+  background: grey;
+}
+
+.userMenu::before {
+  font-family: FontAwesome;
+  content: '\f2be';
+}

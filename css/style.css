@@ -5,4 +5,7 @@
 @import 'basics.css';
 @import 'menubar.css';
 @import 'sidebar.css';
-@import 'content.css'
+@import 'content.css';
+@import 'sidebar_sompact.css';
+@import 'menubar_compact';
+@import 'sidebar_compact';

@@ -12,8 +12,20 @@
 .sidebarMenu {
   width: calc(100% + 20px);
   height: 100%;
-  padding-right: 20px;
   overflow-y: scroll;
+}
+
+.sidebarMenuItem {
+  position: relative;
+  height: 50px;
+}
+
+.sidebarMenuItem:hover {
+  height: auto;
+}
+
+.sidebarMenuItem::before{
+
 }
 
 .sidebarMenuItem:hover .sidebarSubmenu {
@@ -21,14 +33,71 @@
 }
 
 .sidebarMenuItem > div {
+  position: relative;
+  width: 300px;
   height: 50px;
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
   line-height: 30px;
+}
+
+.sidebarMenuItem > div::before {
+
 }
 
 .sidebarMenuItem > div:hover {
   background: lightgrey;
 }
+
+.sidebarSubmenu {
+  display: none;
+}
+
+.sidebarSubmenuItem {
+
+}
+
+.sidebarSubmenuItem:first-child {
+  display: none;
+
+}
+
+.sidebarSubmenuItem > div::before {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-family: FontAwsome;
+  text-align: center;
+}
+
+.sidebarMenuItem:last-child {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.sidebarSubmenuItem.apple::before {content: '\f179';}
+
+.sidebarSubmenuItem.behance::before {content: '\f1b4';}
+
+.sidebarSubmenuItem.twitter-square::before {content: '\f081';}
+
+.sidebarSubmenuItem.soundcloud::before {content: '\f1be';}
+
+.sidebarSubmenuItem.vk::before {content: '\f189';}
+
+.sidebarSubmenuItem.snapchat::before {content: '\f2ab';}
+
+.sidebarSubmenuItem.facebook::before {content: '\f2ab';}
+
+.sidebarSubmenuItem.tumblr-square::before {content: '\f174';}
+
+.sidebarSubmenuItem.foursquare::before {content: '\f180';}
+
+.sidebarSubmenuItem.github::before {content: '\f09b';}
+
+.sidebarSubmenuItem.mode::before {content: '';}
 
 .sidebarSubmenu {
   display: none;

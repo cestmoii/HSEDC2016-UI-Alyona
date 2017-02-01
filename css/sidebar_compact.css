@@ -1,0 +1,82 @@
+.compact .sidebar {
+  width: 60px;
+  overflow: visible;
+}
+
+.compact .sidebarMenuItem > div {
+  display: none;
+}
+
+.compact .sidebarMenuItem:hover {
+  height: 50px;
+  background: lightgrey;
+}
+
+.compact .sidebarSubmenuItem.mode::before {
+  content: '\f054';
+}
+
+.compact .sidebarMenu {
+  width: 60%;
+  overflow-y: visible;
+}
+
+.compact .sidebarSubmenu {
+  position: absolute;
+  left: 60px;
+  /*top: 70px;*/
+  /*right: 10px;*/
+  /*display: none;*/
+  width: 220px;
+  padding: 10px 0;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  background: white;
+}
+
+.compact .sidebarSubmenuItem {
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+}
+
+.compact .sidebarSubmenuItem:first-child {
+  display: block;
+  border-bottom: 1px solid lightgrey;
+}
+
+.compact .sidebarSubmenuItem:first-child:hover {
+  background: white;
+}
+
+.compact .sidebarSubmenuItem:nth-child(2){
+  margin-top: 10px;
+}
+
+
+.compact .sidebarSubmenu::before,
+.compact .sidebarSubmenu::after{
+  position: absolute;
+  display: block;
+  content: '';
+  background: white;
+}
+
+.compact .sidebarSubmenu::before {
+  position: absolute;
+  top: 15px;
+  right: -8px;
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  transform: rotate(45deg);
+}
+
+.compact .sidebarSubmenu::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 50px;
+}

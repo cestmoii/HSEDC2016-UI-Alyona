@@ -2,14 +2,3 @@
   padding-top: 70px;
   padding-left: 300px;
 }
-
-.content div {
-  width: 400px;
-  height: 20px;
-  margin: 20px;
-  background: red;
-}
-
-.content div:first-child {
-  background-color: orange;
-}

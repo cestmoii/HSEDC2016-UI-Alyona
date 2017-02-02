@@ -24,10 +24,6 @@
   height: auto;
 }
 
-.sidebarMenuItem::before{
-
-}
-
 .sidebarMenuItem:hover .sidebarSubmenu {
   display: block;
 }
@@ -36,38 +32,25 @@
   position: relative;
   width: 300px;
   height: 50px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 60px;
   line-height: 30px;
-}
-
-.sidebarMenuItem > div::before {
-
 }
 
 .sidebarMenuItem > div:hover {
   background: lightgrey;
 }
 
-.sidebarSubmenu {
-  display: none;
-}
-
-.sidebarSubmenuItem {
-
-}
-
-.sidebarSubmenuItem:first-child {
-  display: none;
-
-}
-
-.sidebarSubmenuItem > div::before {
+.sidebarMenuItem::before{
+  position: absolute;
+  top: 0;
+  left: 10px;
+  z-index: 1;
   display: block;
-  width: 50px;
+  width: 40px;
   height: 50px;
   line-height: 50px;
   font-size: 20px;
-  font-family: FontAwsome;
+  font-family: FontAwesome;
   text-align: center;
 }
 
@@ -77,27 +60,27 @@
   left: 0;
 }
 
-.sidebarSubmenuItem.apple::before {content: '\f179';}
+.sidebarMenuItem.apple::before {content: '\f179';}
 
-.sidebarSubmenuItem.behance::before {content: '\f1b4';}
+.sidebarMenuItem.behance::before {content: '\f1b4';}
 
-.sidebarSubmenuItem.twitter-square::before {content: '\f081';}
+.sidebarMenuItem.twitter-square::before {content: '\f081';}
 
-.sidebarSubmenuItem.soundcloud::before {content: '\f1be';}
+.sidebarMenuItem.soundcloud::before {content: '\f1be';}
 
-.sidebarSubmenuItem.vk::before {content: '\f189';}
+.sidebarMenuItem.telegram::before {content: '\f2c6';}
 
-.sidebarSubmenuItem.snapchat::before {content: '\f2ab';}
+.sidebarMenuItem.snapchat::before {content: '\f2ab';}
 
-.sidebarSubmenuItem.facebook::before {content: '\f2ab';}
+.sidebarMenuItem.facebook::before {content: '\f09a';}
 
-.sidebarSubmenuItem.tumblr-square::before {content: '\f174';}
+.sidebarMenuItem.tumblr-square::before {content: '\f174';}
 
-.sidebarSubmenuItem.foursquare::before {content: '\f180';}
+.sidebarMenuItem.foursquare::before {content: '\f180';}
 
-.sidebarSubmenuItem.github::before {content: '\f09b';}
+.sidebarMenuItem.github::before {content: '\f09b';}
 
-.sidebarSubmenuItem.mode::before {content: '';}
+.sidebarMenuItem.mode::before {content: '';}
 
 .sidebarSubmenu {
   display: none;
@@ -105,10 +88,14 @@
 
 .sidebarSubmenuItem {
   height: 50px;
-  padding: 10px 10px 10px 20px;
+  padding: 10px 10px 10px 60px;
   line-height: 30px;
 }
 
 .sidebarSubmenuItem:hover {
   background: lightgrey;
+}
+
+.sidebarSubmenuItem:first-child {
+  display: none;
 }

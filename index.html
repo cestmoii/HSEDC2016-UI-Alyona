@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HSEDC2016 UI</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+    <script src="js/changemode.js" charset="utf-8"></script>
   </head>
   <body class="compact">
     <nav class="menubar">
@@ -20,134 +22,133 @@
     </nav>
 
     <nav class="sidebar">
-    <ul class="sidebarMenu">
-      <li class="sidebarMenuItem .apple">
-        <div>MenuItem</div>
+      <ul class="sidebarMenu">
+        <li class="sidebarMenuItem apple">
+          <div>MenuItem</div>
 
+          <ul class="sidebarSubmenu">
+            <li class="sidebarSubmenuItem">Menu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+          </ul>
+        </li>
 
-        <ul class="sidebarSubmenu">
-          <li class="sidebarSubmenuItem">Menu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-        </ul>
-      </li>
+        <li class="sidebarMenuItem behance">
+          <div>MenuItem</div>
+          <ul class="sidebarSubmenu">
+            <li class="sidebarSubmenuItem">Menu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+          </ul>
+        </li>
 
-      <li class="sidebarMenuItem .behance">
-        <div>MenuItem</div>
-        <ul class="sidebarSubmenu">
-          <li class="sidebarSubmenuItem">Menu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-        </ul>
-      </li>
+        <li class="sidebarMenuItem twitter-square">
+          <div>MenuItem</div>
+          <ul class="sidebarSubmenu">
+            <li class="sidebarSubmenuItem">Menu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+          </ul>
+        </li>
 
-      <li class="sidebarMenuItem twitter-square">
-        <div>MenuItem</div>
-        <ul class="sidebarSubmenu">
-          <li class="sidebarSubmenuItem">Menu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-        </ul>
-      </li>
+        <li class="sidebarMenuItem soundcloud">
+          <div>MenuItem</div>
+          <ul class="sidebarSubmenu">
+            <li class="sidebarSubmenuItem">Menu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+          </ul>
+        </li>
 
-      <li class="sidebarMenuItem soundcloud">
-        <div>MenuItem</div>
-        <ul class="sidebarSubmenu">
-          <li class="sidebarSubmenuItem">Menu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-        </ul>
-      </li>
+        <li class="sidebarMenuItem telegram">
+          <div>MenuItem</div>
+          <ul class="sidebarSubmenu">
+            <li class="sidebarSubmenuItem">Menu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+          </ul>
+        </li>
 
-      <li class="sidebarMenuItem vk">
-        <div>MenuItem</div>
-        <ul class="sidebarSubmenu">
-          <li class="sidebarSubmenuItem">Menu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-        </ul>
-      </li>
+        <li class="sidebarMenuItem snapchat">
+          <div>MenuItem</div>
+          <ul class="sidebarSubmenu">
+            <li class="sidebarSubmenuItem">Menu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+          </ul>
+        </li>
 
-      <li class="sidebarMenuItem snapchat">
-        <div>MenuItem</div>
-        <ul class="sidebarSubmenu">
-          <li class="sidebarSubmenuItem">Menu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-        </ul>
-      </li>
+        <li class="sidebarMenuItem facebook">
+          <div>MenuItem</div>
+          <ul class="sidebarSubmenu">
+            <li class="sidebarSubmenuItem">Menu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+          </ul>
+        </li>
 
-      <li class="sidebarMenuItem facebook">
-        <div>MenuItem</div>
-        <ul class="sidebarSubmenu">
-          <li class="sidebarSubmenuItem">Menu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-        </ul>
-      </li>
+        <li class="sidebarMenuItem tumblr-square">
+          <div>MenuItem</div>
+          <ul class="sidebarSubmenu">
+            <li class="sidebarSubmenuItem">Menu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+          </ul>
+        </li>
 
-      <li class="sidebarMenuItem tumblr-square">
-        <div>MenuItem</div>
-        <ul class="sidebarSubmenu">
-          <li class="sidebarSubmenuItem">Menu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-        </ul>
-      </li>
+        <li class="sidebarMenuItem foursquare">
+          <div>MenuItem</div>
+          <ul class="sidebarSubmenu">
+            <li class="sidebarSubmenuItem">Menu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+          </ul>
+        </li>
 
-      <li class="sidebarMenuItem foursquare">
-        <div>MenuItem</div>
-        <ul class="sidebarSubmenu">
-          <li class="sidebarSubmenuItem">Menu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-        </ul>
-      </li>
+        <li class="sidebarMenuItem github">
+          <div>MenuItem</div>
+          <ul class="sidebarSubmenu">
+            <li class="sidebarSubmenuItem">Menu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+            <li class="sidebarSubmenuItem">Submenu item</li>
+          </ul>
+        </li>
 
-      <li class="sidebarMenuItem github">
-        <div>MenuItem</div>
-        <ul class="sidebarSubmenu">
-          <li class="sidebarSubmenuItem">Menu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-          <li class="sidebarSubmenuItem">Submenu item</li>
-        </ul>
-      </li>
+        <li class="sidebarMenuItem mode">
+          <div>Change mode</div>
+        </li>
 
-      <li class="sidebarMenuItem mode">
-        <div>Change mode</div>
-      </li>
-
-    </ul>
+      </ul>
     </nav>
 
     <section class="content">

@@ -9,13 +9,15 @@
   overflow: hidden;
 }
 
-.sidebar il {
+.sidebar ul {
   margin: 0;
 }
 
 .sidebarMenu {
   width: calc(100% + 20px);
   height: 100%;
+  padding-top: 10px;
+  padding-bottom: 70px;
   overflow-y: scroll;
 }
 
@@ -58,10 +60,13 @@
   text-align: center;
 }
 
-.sidebarMenuItem:last-child {
+.sidebarModeMenu {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 2;
+  padding: 10px 0;
+  background-color: white;
 }
 
 .sidebarMenuItem.apple::before {content: '\f179';}
@@ -100,6 +105,6 @@
   background: lightgrey;
 }
 
-.sidebarSubmenuItem:first-child {
+.sidebarSubmenuHeader {
   display: none;
 }

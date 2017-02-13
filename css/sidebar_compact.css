@@ -17,18 +17,17 @@
 }
 
 .compact .sidebarMenu {
-  width: 60%;
+  width: 60px;
   overflow-y: visible;
 }
 
 .compact .sidebarSubmenu {
   position: absolute;
   left: 60px;
-  /*top: 70px;*/
-  /*right: 10px;*/
-  /*display: none;*/
+  /*max-height: 284px;*/
+  /*padding-top: 60px;*/
   width: 220px;
-  padding: 0 0 10px;
+  padding-bottom: 10px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
   background: white;
 }
@@ -63,20 +62,6 @@
   padding: 10px;
 }
 
-.compact .sidebarSubmenuItem:first-child {
-  display: block;
-  border-bottom: 1px solid lightgrey;
-}
-
-.compact .sidebarSubmenuItem:first-child:hover {
-  background: white;
-}
-
-.compact .sidebarSubmenuItem:nth-child(2) {
-  margin-top: 10px;
-}
-
-
 .compact .sidebarSubmenu::before,
 .compact .sidebarSubmenu::after{
   position: absolute;
@@ -87,7 +72,7 @@
 
 .compact .sidebarSubmenu::before {
   top: 15px;
-  right: -8px;
+  left: -8px;
   width: 20px;
   height: 20px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
@@ -101,6 +86,10 @@
   height: 50px;
 }
 
+.compact .sidebarModeMenu {
+  width: 59px;
+}
+
 .compact .sidebarSubmenuHeader {
   position: absolute;
   top: 0;
@@ -110,4 +99,8 @@
 
 .compact .sidebarSubmenuHeader li {
   border-bottom: 1px solid lightgrey;
+}
+
+.compact .sidebarSubmenuHeader li:hover {
+  background: white;
 }
